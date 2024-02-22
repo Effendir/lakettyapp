@@ -1,0 +1,118 @@
+h1, h2 {
+  text-align: center;
+  color: white;
+}
+
+p, label, li {
+  color: white;
+}
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  width: 20%;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.5);
+  border: solid 2px white;
+  border-radius: 5px;
+  margin: 1%;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+}
+
+.prosandcons, .lottery {
+  background: rgba(0,0,0,0.5);
+  margin: 1%;
+  padding: 1%;
+  border-radius: 15px;
+  border: solid white 2px;
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.voters-ui, .contestants-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-voters, .add-contestants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+  margin-bottom: 10%;
+}
+
+.votes-result {
+  width: 100%;
+  text-align: center;
+}
+
+.progress {
+  width: 80%;
+  margin: 10px auto;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.progress-bar {
+  height: 30px;
+  border-radius: 4px;
+  transition: width 0.9s ease;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  display: none;
+}
+
+.winner {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+}

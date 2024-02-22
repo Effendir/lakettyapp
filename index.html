@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaKettyApp</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="prosandcons">
+
+      <h2>Pour ou Contre ?</h2>
+
+      <div class="voters-ui">
+
+        <div class="add-voters">
+          <label for="item"> Nom : </label>
+          <input type="text" name="name" id="voter-name">
+          <label for="item"> Pourcentage : </label>
+          <input type="text" name="percentage" id="voter-percentage">
+          <button class="add-voter-button">+</button>
+        </div>
+
+        <ul class="voters-list">
+        </ul>
+
+      </div>
+
+      <div class="votes-result">
+
+        <p class="result">0%</p>
+
+        <div class="progress">
+
+          <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="lottery">
+
+      <h2>Kettyroulette</h2>
+
+      <div class="contestants-ui">
+
+        <div class="add-contestants">
+          <label for="item"> Nom : </label>
+          <input type="text" name="name" id="contestant-name">
+          <button class="add-contestant-button">+</button>
+        </div>
+
+        <ul class="contestants-list">
+        </ul>
+
+      </div>
+
+      <button class="random">Kikikagagné</button>
+
+      <h1 class="winner"></h2>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
