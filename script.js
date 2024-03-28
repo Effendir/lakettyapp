@@ -10,6 +10,19 @@ let votersNumber = 0;
 
 addVoterButton.addEventListener("click", (e) => {
   let inputValue = votersNamesInput.value + " - " + percentageInput.value + " % ";
+  if (votersNamesInput.value == "Ketty" || votersNamesInput.value == "ketty") {
+    inputValue = "Ketty Désirée Amandine N'Golo - " + percentageInput.value + " % ";
+  } else if  (votersNamesInput.value == "Carlu" || votersNamesInput.value == "carlu") {
+    inputValue = "Francis Cabrel - " + percentageInput.value + " % ";
+  } else if (votersNamesInput.value == "Pablo" || votersNamesInput.value == "pablo") {
+    inputValue = "Le démon de la colère - " + percentageInput.value + " % ";
+  } else if (votersNamesInput.value == "Miche" || votersNamesInput.value == "miche") {
+    inputValue = "Micatellu - " + percentageInput.value + " % ";
+  } else if (votersNamesInput.value == "Eugène" || votersNamesInput.value == "eugene") {
+    inputValue = "Supabiatch - " + percentageInput.value + " % ";
+  } else if (votersNamesInput.value == "JC" || votersNamesInput.value == "Jc") {
+    inputValue = "Hodor - " + percentageInput.value + " % ";
+  }
   votersNamesInput.value = "";
   let li = document.createElement("li");
   let span = document.createElement("span");
@@ -61,6 +74,9 @@ let contestantsPool = [];
 
 addContestantButton.addEventListener("click", (e) => {
   let inputValue = contestantsNamesInput.value;
+  if (inputValue == "Ketty" || inputValue == "ketty") {
+    inputValue = "Ketty Désirée Amandine N'Golo";
+  }
   contestantsPool.push(inputValue);
   contestantsNamesInput.value = "";
   let li = document.createElement("li");
@@ -83,4 +99,7 @@ addContestantButton.addEventListener("click", (e) => {
 randomizeButton.addEventListener("click", (e) => {
   let winner = contestantsPool[Math.floor(Math.random() * contestantsPool.length)];
   winnerDisplay.innerText = winner;
+  if (winner == "Ketty Désirée Amandine N'Golo") {
+    winnerDisplay.innerHTML += `<img src="images/marmeladegirl.jpg" alt="vision d'horreur" class="shinobu">`
+  }
 })
