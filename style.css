@@ -1,11 +1,13 @@
 h1, h2 {
   text-align: center;
   color: white;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 p, label, li {
   color: white;
   font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 ul {
@@ -23,6 +25,7 @@ button {
   border: solid 2px white;
   border-radius: 5px;
   margin: 1%;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .wrapper {
@@ -103,9 +106,10 @@ button {
 }
 
 .progress-bar {
-  height: 30px;
-  width: 80%;
-  border-radius: 4px;
+  height: 20px;
+  width: 70%;
+  border: solid white 2px;
+  border-radius: 12px;
   display: none;
 }
 
@@ -113,6 +117,7 @@ button {
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
   -webkit-background-clip: text;
   color: transparent;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .shinobu {
