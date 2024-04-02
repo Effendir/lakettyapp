@@ -111,6 +111,7 @@ button {
   border: solid white 2px;
   border-radius: 12px;
   display: none;
+  overflow: hidden;
 }
 
 .winner {
