@@ -98,17 +98,14 @@ button {
 }
 
 .progress {
-  width: 80%;
-  margin: 10px auto;
-  background-color: #f0f0f0;
-  border-radius: 4px;
+  display: flex;
+  justify-content: center;
 }
 
 .progress-bar {
   height: 30px;
+  width: 80%;
   border-radius: 4px;
-  transition: width 0.9s ease;
-  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   display: none;
 }
 
@@ -119,6 +116,6 @@ button {
 }
 
 .shinobu {
-  height: 30px;
+  height: 50px;
   width: auto;
 }

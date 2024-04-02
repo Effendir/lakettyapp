@@ -52,7 +52,7 @@ function updatePercentage() {
   if (votersNumber === 0) {
     percentageResult.innerText = "0%";
   } else {
-    percentageResult.innerText = `${total / votersNumber} %`;
+    percentageResult.innerText = `${Math.round(total / votersNumber)} %`;
   }
 }
 
@@ -61,7 +61,7 @@ function updateProgressBar() {
     progressBar.style.display = "none";
   } else {
     progressBar.style.display = "block";
-    progressBar.style.width = `${total / votersNumber}%`;
+    progressBar.value = Math.round(total / votersNumber);
   }
 }
 
@@ -100,6 +100,6 @@ randomizeButton.addEventListener("click", (e) => {
   let winner = contestantsPool[Math.floor(Math.random() * contestantsPool.length)];
   winnerDisplay.innerText = winner;
   if (winner == "Ketty Désirée Amandine N'Golo") {
-    winnerDisplay.innerHTML += `<img src="images/marmeladegirl.jpg" alt="vision d'horreur" class="shinobu">`
+    winnerDisplay.innerHTML = `<img src="images/marmeladegirl.jpg" alt="vision d'horreur" class="shinobu">`
   }
 })
